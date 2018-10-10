@@ -1,5 +1,4 @@
-/*
-package org.ngrinder;
+package org.ngrinder.starter;
 
 import com.beust.jcommander.ParameterException;
 
@@ -20,15 +19,13 @@ public class PortAvailabilityValidator extends PortRangeValidator {
 		}
 	}
 
-	*/
-/**
+	/**
 	 * Check if the given port is available.
 	 *
-	 * @param addr address to be bound
+	 * @param inetAddress address to be bound
 	 * @param port port to be checked
 	 * @return true if available
-	 *//*
-
+	 */
 	public static boolean checkExactPortAvailability(InetAddress inetAddress, int port) {
 		ServerSocket socket = null;
 		try {
@@ -52,4 +49,3 @@ public class PortAvailabilityValidator extends PortRangeValidator {
 	}
 
 }
-*/

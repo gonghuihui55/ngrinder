@@ -135,7 +135,10 @@ public class Config extends AbstractConfig implements ControllerConstants, Clust
 			// Load cluster in advance. cluster mode is not dynamically
 			// reloadable.
 			cluster = resolveClusterMode();
+
+			// stop here..
 			initDevModeProperties();
+
 			addChangeConfigListenerForStatistics();
 			loadAnnouncement();
 			loadDatabaseProperties();
@@ -267,7 +270,7 @@ public class Config extends AbstractConfig implements ControllerConstants, Clust
 	 * @param forceToVerbose true to force verbose logging.
 	 */
 	public synchronized void initLogger(boolean forceToVerbose) {
-		setupLogger((forceToVerbose) || getControllerProperties().getPropertyBoolean(PROP_CONTROLLER_VERBOSE));
+		// setupLogger((forceToVerbose) || getControllerProperties().getPropertyBoolean(PROP_CONTROLLER_VERBOSE));
 	}
 
 	/**
